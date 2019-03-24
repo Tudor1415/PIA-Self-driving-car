@@ -7,3 +7,10 @@ dependencies:-
   - tensorflow-gpu
   - keras
   - scikit-learn
+  - numpy
+  - pandas
+  - os
+  - glob
+  - matplotlib.pyplot
+  - pickle
+

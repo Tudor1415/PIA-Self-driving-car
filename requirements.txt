@@ -1,0 +1,12 @@
+opencv-python
+aiohttp
+python-socketio
+tensorflow-gpu
+keras
+scikit-learn
+numpy
+pandas
+glob2
+matplotlib
+pickle
+

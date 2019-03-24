@@ -3,7 +3,7 @@ import numpy as np
 from laneDetectionLib import *
 
 # The video feed is read in as a VideoCapture object
-cap = cv.VideoCapture("../dataset/input.mp4")
+cap = cv.VideoCapture("../../dataset/straight.mp4")
 while (cap.isOpened()):
     # ret = a boolean return value from getting the frame, frame = the current frame being projected in the video
     ret, frame = cap.read()
