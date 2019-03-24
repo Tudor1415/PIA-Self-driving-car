@@ -16,6 +16,7 @@ def do_canny(frame):
     canny = cv.Canny(blur, 50, 150)
     return canny
 
+
 def do_segment(frame):
     # Since an image is a multi-directional array containing the relative intensities of each pixel in the image, we can use frame.shape to return a tuple: [number of rows, number of columns, number of channels] of the dimensions of the frame
     # frame.shape[0] give us the number of rows of pixels the frame has. Since height begins from 0 at the top, the y-coordinate of the bottom of the frame is its height
@@ -80,11 +81,13 @@ def visualize_lines(frame, lines):
     return lines_visualize
 
 # The video feed is read in as a VideoCapture object
-cap = cv.VideoCapture("input.mp4")
+cap = cv.VideoCapture("dataset/input.mp4")
 while (cap.isOpened()):
     # ret = a boolean return value from getting the frame, frame = the current frame being projected in the video
     ret, frame = cap.read()
     canny = do_canny(frame)
+    color = YUV(frame)
+    cv.imshow("Frame", color)
     cv.imshow("canny", canny)
     # plt.imshow(frame)
     # plt.show()

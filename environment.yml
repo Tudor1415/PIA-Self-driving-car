@@ -1,0 +1,9 @@
+name: pia-self-driving-car
+dependencies:-
+  - python=3.6
+  - opencv
+  - aiohttp
+  - python-socketio
+  - tensorflow-gpu
+  - keras
+  - scikit-learn
